@@ -8,7 +8,31 @@
       * { margin: 0;padding: 0;box-sizing: border-box; }
       body { font-family:Arial,sans-serif; background: #f0f2f5; padding: 30px; }
       .container { max-width: 1000px; margin: 0 auto; }
-      h1
+      h1 { text-align: center; color: #1a1a2e;font-size: 28px; }
+      .subtitle { text-align: center; color: #666; margin: 8px 0 30px; }
+      .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap 24px; }
+      .card {background: white; border-radius: 12px; overflow:hidden; box-shadow: 0 4px 12px rgba(0,0,0,0,0.08); transition: transform 0.2s; }
+      .card:hover { transform:translateY(-4px); }
+      .card img { width:100%; height: 200px; object-fit: cover; background: #e8e8e8; }
+      .card .info { padding: 16px; } 
+      .card .info h3 { font-size: 17px; color: #1a1a2e; margin-bottom:6px; }
+      .card .info tags { font-size: 13px; color: #0077b6; margin-bottom:6px; }
+      .card .info p { font-size: 14px; color: #555; line-height: 1.5; }
+      .footer { text-align: center; margin-top: 40px; color: #999; font-size: 14px; }
     </style>
   </head>
+  <body>
+    <div class="gallery">
+      <h1> 陈杨 模拟版图设计</h1>
+      <p class="subtitle">Analog Layout Engineer | 40nm / 28nm | ADC 电源 接口</p>
+
+      <div class="gallery">
+        <!-- ====== 作品卡片：复制这一段添加新作品 ====== -->
+        <div class="card">
+          <img src="images/project1.png" alt="项目预览" onerror="this.style.display='none'">
+          <div class="info">
+            <h3>12位 SAR ADC</h3>
+            <div class="tags">40nm | 0.32mm
+        
+  </body>
 </html>
